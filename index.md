@@ -32,7 +32,7 @@ Explore our publications on machine learning for cancer genomics, biological net
   include feature.html
   image="images/photo.jpg"
   link="research"
-  title="Our Research"
+  title="Our Publications"
   text=text
 %}
 
@@ -63,7 +63,7 @@ Our research combines graph-based machine learning, single-cell multi-omics, and
 
 {% capture text %}
 
-	We are a computational biology group led by Golnaz Taheri, Assistant Professor, Docent at KTH and SciLifeLab and Wallenberg DDLS and WASP Fellow.
+We are a computational biology group led by Golnaz Taheri, Assistant Professor, Docent at KTH and SciLifeLab and Wallenberg DDLS and WASP Fellow.
 
 {%
   include button.html
