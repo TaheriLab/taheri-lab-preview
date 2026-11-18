@@ -1,9 +1,13 @@
 ---
 ---
 
-# TaheriLab's Website
+# Machine learning for cancer biology and drug safety
 
-An engaging 1-3 sentence description of your lab.
+We develop machine learning methods to study cancer biology,
+predict drug interactions, and identify opportunities for drug repurposing.
+
+The Taheri Lab is based at KTH Royal Institute of Technology and
+SciLifeLab in Stockholm, Sweden.
 
 {% include section.html %}
 
@@ -11,7 +15,7 @@ An engaging 1-3 sentence description of your lab.
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Explore our publications on machine learning for cancer genomics, biological networks, and drug interaction prediction.
 
 {%
   include button.html
@@ -34,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our research combines graph-based machine learning, single-cell multi-omics, and biomedical knowledge to investigate cancer biology and drug safety.
 
 {%
   include button.html
@@ -59,7 +63,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+	We are a computational biology group led by Golnaz Taheri, Assistant Professor, Docent at KTH and SciLifeLab and Wallenberg DDLS and WASP Fellow.
 
 {%
   include button.html
