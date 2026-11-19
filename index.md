@@ -78,7 +78,7 @@ We are a computational biology group led by Golnaz Taheri, Assistant Professor, 
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/Golnaz.jpg"
   link="team"
   title="Our Team"
   text=text
