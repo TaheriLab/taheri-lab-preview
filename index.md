@@ -16,7 +16,7 @@ SciLifeLab in Stockholm, Sweden.
 
 {% include section.html %}
 
-## Highlights
+## Explore the lab
 
 {% capture text %}
 
