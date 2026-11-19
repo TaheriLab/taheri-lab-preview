@@ -1,5 +1,5 @@
 ---
-name: Ardam Yilmaz
+name: Ardan Yilmaz
 image: images/photo.jpg
 role: phd student
 
