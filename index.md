@@ -3,8 +3,13 @@
 
 # Machine learning for cancer biology and drug safety
 
-We develop machine learning methods to study cancer biology,
-predict drug interactions, and identify opportunities for drug repurposing.
+We develop graph-based and multimodal machine learning methods
+to study cancer biology, treatment effects, and drug safety.
+
+By combining single-cell multi-omics, biological networks,
+and biomedical knowledge graphs, we investigate molecular
+patterns in cancer, predict drug interactions, and explore
+opportunities for drug repurposing.
 
 The Taheri Lab is based at KTH Royal Institute of Technology and
 SciLifeLab in Stockholm, Sweden.
