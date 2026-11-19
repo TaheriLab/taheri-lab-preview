@@ -1,20 +1,16 @@
 ---
-name: Jane Smith
-image: images/photo.jpg
+name: Golnaz Taheri
+image: images/Golnaz.jpg
 role: principal-investigator
-affiliation: University of Colorado
+affiliation: KTH Royal Institute of Technology and SciLifeLab
 aliases:
-  - J. Smith
-  - J Smith
 links:
-  home-page: https://janesmith.com
+  home-page: https://www.kth.se/profile/golnazt
   orcid: 0000-0001-8713-9213
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Faucibus purus in massa tempor nec feugiat nisl pretium fusce.
-Elit at imperdiet dui accumsan.
-Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
-Vitae elementum curabitur vitae nunc sed velit dignissim sodales.
-Lacinia at quis risus sed vulputate odio ut.
-Magna eget est lorem ipsum.
+Golnaz Taheri is an Assistant Professor and Docent at KTH,
+a SciLifeLab and Wallenberg DDLS Fellow, and a WASP Fellow.
+
+Her research develops machine learning methods for cancer genomics,
+drug interaction prediction, and molecular data integration.
