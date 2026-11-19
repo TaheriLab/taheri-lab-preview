@@ -6,7 +6,7 @@ affiliation: KTH Royal Institute of Technology and SciLifeLab
 aliases:
 links:
   home-page: https://www.kth.se/profile/golnazt
-  orcid: 
+
 ---
 
 Golnaz Taheri is an Assistant Professor and Docent at KTH,
