@@ -77,7 +77,7 @@ clinical researchers at Karolinska Institutet.
 
 ### SciLifeLab and Wallenberg DDLS Fellowship
 
-#### Machine learning for lung cancer metastasis
+#### Understanding the molecular basis of lung cancer metastasis
 
 We develop machine learning methods to investigate molecular
 features associated with metastatic progression in lung cancer.
