@@ -59,22 +59,6 @@ and their interpretation.
 
 ## Selected projects
 
-### Swedish Research Council
-
-#### Graph-based learning for ovarian cancer recurrence
-
-We develop graph-based machine learning methods that integrate
-biological knowledge with single-cell multi-omics data to study
-recurrence in advanced ovarian cancer. The project aims to identify
-molecular patterns associated with recurrence and understand the
-biological processes underlying differences in patient outcomes.
-
-This project is conducted in collaboration with experimental and
-clinical researchers at Karolinska Institutet.
-
-
-{% include section.html %}
-
 ### SciLifeLab and Wallenberg DDLS Fellowship
 
 #### Understanding the molecular basis of lung cancer metastasis
@@ -94,6 +78,22 @@ spatial features associated with treatment responses.
 
 Both projects involve collaboration with experimental and
 clinical researchers at Karolinska Institutet.
+
+{% include section.html %}
+
+### Swedish Research Council
+
+#### Graph-based learning for ovarian cancer recurrence
+
+We develop graph-based machine learning methods that integrate
+biological knowledge with single-cell multi-omics data to study
+recurrence in advanced ovarian cancer. The project aims to identify
+molecular patterns associated with recurrence and understand the
+biological processes underlying differences in patient outcomes.
+
+This project is conducted in collaboration with experimental and
+clinical researchers at Karolinska Institutet.
+
 
 {% include section.html %}
 
