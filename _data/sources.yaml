@@ -1,11 +1,15 @@
 # Prostate cancer study
 - id: doi:10.1038/s41746-026-03254-5
+  image: images/npj-digital-medicine.jpg
 
 # GenePioneer
 - id: doi:10.1093/bioadv/vbaf094
+  image: images/bioinformatics-advances.png
 
 # Breast cancer driver genes
 - id: doi:10.1016/j.compbiomed.2024.108234
+  image: images/computers-biology-medicine.jpg
 
 # Cancer mutation analysis
 - id: doi:10.1371/journal.pcbi.1010332
+  image: images/plos-computational-biology.png
