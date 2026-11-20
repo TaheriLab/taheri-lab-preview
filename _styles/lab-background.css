@@ -1,0 +1,173 @@
+/* Taheri Lab: an organic background and banner for the Greene template.
+   This file is discovered automatically by _includes/styles.html. */
+
+:root {
+  --lab-paper: 250, 249, 249;
+  --lab-panel: 255, 255, 255;
+  --lab-panel-alt: 246, 243, 245;
+  --lab-ink: 127, 91, 105;
+  --lab-accent: #8d495c;
+  --primary: #8d495c;
+}
+
+html[data-dark="true"] {
+  --lab-paper: 24, 22, 26;
+  --lab-panel: 29, 27, 31;
+  --lab-panel-alt: 35, 30, 35;
+  --lab-ink: 194, 163, 175;
+  --lab-accent: #d49aa9;
+  --primary: #d49aa9;
+}
+
+body {
+  isolation: isolate;
+  background: rgb(var(--lab-paper));
+  line-height: 1.65;
+}
+
+#lab-ambient-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Translucent sections let the ambient illustration remain visible.
+   Images, paragraphs and controls themselves stay fully opaque. */
+main > section:nth-of-type(odd) {
+  background: rgba(var(--lab-panel), 0.78);
+}
+
+main > section:nth-of-type(even) {
+  background: rgba(var(--lab-panel-alt), 0.76);
+}
+
+header.background,
+footer.background {
+  --image: url("../images/taheri-banner.png") !important;
+}
+
+header.background {
+  --text: #ffffff;
+  --primary: #efc7ce;
+  background: #292325;
+  color: #ffffff;
+  box-shadow: 0 5px 28px rgba(34, 21, 29, 0.09);
+}
+
+header.background::before {
+  background-image: linear-gradient(90deg, rgba(18, 15, 17, 0.34), rgba(18, 15, 17, 0.12)), var(--image);
+  background-position: center, 66% center;
+  opacity: 1;
+}
+
+header[data-big] {
+  min-height: 330px;
+  padding-block: clamp(64px, 8vw, 100px);
+  border-radius: 0 0 32px 32px;
+  overflow: hidden;
+}
+
+header[data-big]::before {
+  border-radius: inherit;
+}
+
+header .title,
+header .subtitle,
+header nav {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55);
+}
+
+header .subtitle {
+  opacity: 0.94;
+}
+
+header nav {
+  text-transform: none;
+  gap: 12px;
+}
+
+header nav > a {
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+header nav > a:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+.feature {
+  padding: clamp(18px, 3vw, 30px);
+  border: 1px solid rgba(var(--lab-ink), 0.1);
+  border-radius: 24px;
+  background: rgba(var(--lab-panel), 0.8);
+  box-shadow: 0 8px 32px rgba(44, 27, 35, 0.035);
+}
+
+.feature-image {
+  border-radius: 18px;
+  box-shadow: none;
+}
+
+.lab-motion-toggle {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 30;
+  box-sizing: border-box;
+  max-width: calc(100vw - 96px);
+  min-height: 44px;
+  padding: 9px 14px;
+  border: 1px solid rgba(var(--lab-ink), 0.24);
+  border-radius: 999px;
+  background: rgba(var(--lab-panel), 0.96);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.4;
+  cursor: pointer;
+  box-shadow: 0 3px 14px rgba(34, 21, 29, 0.07);
+}
+
+.lab-motion-toggle[aria-checked="true"] {
+  border-color: var(--lab-accent);
+}
+
+.lab-motion-toggle:hover {
+  background: rgb(var(--lab-panel));
+}
+
+.lab-motion-toggle:focus-visible {
+  outline: 3px solid var(--lab-accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  header[data-big] {
+    min-height: 280px;
+    padding-block: 52px;
+    border-radius: 0 0 22px 22px;
+  }
+
+  header.background::before {
+    background-image: linear-gradient(rgba(18, 15, 17, 0.42), rgba(18, 15, 17, 0.42)), var(--image);
+    background-position: center, 72% center;
+  }
+
+  .feature {
+    gap: 22px;
+    border-radius: 18px;
+  }
+}
+
+@media print {
+  #lab-ambient-canvas,
+  .lab-motion-toggle {
+    display: none !important;
+  }
+}
