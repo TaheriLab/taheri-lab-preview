@@ -1,6 +1,6 @@
 ---
 name: Faezeh Fathi
-image: images/photo.jpg
+image: images/Faezeh
 role: phd
 
 
