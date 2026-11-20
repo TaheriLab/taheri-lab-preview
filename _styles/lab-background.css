@@ -244,3 +244,7 @@ header nav > a:focus-visible {
     display: none !important;
   }
 }
+/* Hide the default flask logo */
+header .logo {
+  display: none !important;
+}
