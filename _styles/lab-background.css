@@ -53,26 +53,76 @@ footer.background {
 header.background {
   --text: #ffffff;
   --primary: #efc7ce;
-  background: #292325;
+  background: #292929;
   color: #ffffff;
   box-shadow: 0 5px 28px rgba(34, 21, 29, 0.09);
 }
 
 header.background::before {
-  background-image: linear-gradient(90deg, rgba(18, 15, 17, 0.34), rgba(18, 15, 17, 0.12)), var(--image);
-  background-position: center, 66% center;
+  background-image: none;
   opacity: 1;
 }
 
+/* Hide the Greene template's placeholder flask. The home link remains. */
+header .logo {
+  display: none;
+}
+
+/* The title and navigation use the quiet left half of the illustration.
+   Contain preserves the whole cell and all three data layers at any width. */
 header[data-big] {
-  min-height: 330px;
-  padding-block: clamp(64px, 8vw, 100px);
+  box-sizing: border-box;
+  min-height: clamp(400px, calc(100vw / 3 + 36px), 720px);
+  padding: clamp(40px, 5vw, 96px) clamp(24px, 6vw, 120px);
+  justify-content: center;
+  align-items: flex-start;
+  gap: 28px;
   border-radius: 0 0 32px 32px;
   overflow: hidden;
 }
 
 header[data-big]::before {
+  inset: 16px 0;
+  background-image: var(--image);
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
   border-radius: inherit;
+}
+
+header[data-big] .home {
+  flex: 0 0 auto;
+  align-items: flex-start;
+  width: 44%;
+  max-width: 660px;
+}
+
+header[data-big] .title-text {
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 14px;
+  width: 100%;
+  text-align: left;
+}
+
+header[data-big] .title {
+  font-size: clamp(2.25rem, 4vw, 4.5rem);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+header[data-big] .subtitle {
+  max-width: 30ch;
+  font-size: clamp(1rem, 1.4vw, 1.375rem);
+  line-height: 1.5;
+}
+
+header[data-big] nav {
+  justify-content: flex-start;
+  width: 44%;
+  max-width: 660px;
+  gap: 6px 8px;
+  margin-left: -10px;
 }
 
 header .title,
@@ -147,18 +197,41 @@ header nav > a:focus-visible {
   outline-offset: 3px;
 }
 
-@media (max-width: 700px) {
+/* On narrow screens, the art occupies its own area BELOW the text.
+   Only the illustration's empty left margin extends outside this area. */
+@media (max-width: 800px) {
   header[data-big] {
-    min-height: 280px;
-    padding-block: 52px;
+    --lab-art-height: clamp(200px, 58vw, 440px);
+    min-height: 0;
+    padding: 40px 24px calc(var(--lab-art-height) + 44px);
+    gap: 24px;
     border-radius: 0 0 22px 22px;
   }
 
-  header.background::before {
-    background-image: linear-gradient(rgba(18, 15, 17, 0.42), rgba(18, 15, 17, 0.42)), var(--image);
-    background-position: center, 72% center;
+  header[data-big]::before {
+    inset: auto 0 20px;
+    height: var(--lab-art-height);
+    background-size: auto 100%;
+    background-position: right center;
   }
 
+  header[data-big] .home,
+  header[data-big] nav {
+    width: 100%;
+    max-width: none;
+  }
+
+  header[data-big] .title {
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
+  }
+
+  header[data-big] .subtitle {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 700px) {
   .feature {
     gap: 22px;
     border-radius: 18px;
