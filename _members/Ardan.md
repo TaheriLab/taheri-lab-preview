@@ -1,6 +1,6 @@
 ---
 name: Ardan Yilmaz
-image: images/Ardan
+image: images/Ardan.png
 role: phd
 
 ---
